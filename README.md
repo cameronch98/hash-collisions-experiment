@@ -4,7 +4,7 @@ A program to run experiments on the differences between breaking weak and strong
 
 ### MacOS/Linux
 
-It is highly recommended to run this in a terminal/terminal emulator instead of through and IDE. First, clone the repository or download/extract the files. Then, it is recommended to go to the project directory and create a virtual environment as follows: 
+It is highly recommended to run this in a terminal/terminal emulator instead of through an IDE. First, clone the repository or download/extract the files. Then, it is recommended to go to the project directory and create a virtual environment as follows: 
 
 ```
 python<version> -m venv <name-for-venv>
