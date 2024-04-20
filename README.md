@@ -25,25 +25,25 @@ pip install -r requirements.txt
 To run the weak collision experiment, we can enter one of the following:
 
 ```
-python weak-collision.py
+python weak_collision.py
 ```
 ```
-python3 weak-collision.py
+python3 weak_collision.py
 ```
 ```
-<name-for-venv>/bin/python weak-collision.py
+<name-for-venv>/bin/python weak_collision.py
 ```
 
 Similarly, to run the strong collision experiment, we can enter one of the following:
 
 ```
-python strong-collision.py
+python strong_collision.py
 ```
 ```
-python3 strong-collision.py
+python3 strong_collision.py
 ```
 ```
-<name-for-venv>/bin/python strong-collision.py
+<name-for-venv>/bin/python strong_collision.py
 ```
 
 # Usage
