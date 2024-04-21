@@ -1,8 +1,13 @@
+""" Citations:
+https://docs.python.org/3/library/hashlib.html
+https://levelup.gitconnected.com/comparing-concurrency-and-parallelism-techniques-in-python-threading-multiprocessing-concurrent-f-7e28c1bf8340
+"""
+
 import random
 import string
 import concurrent.futures
+import hashlib
 from statistics import mean
-from Crypto.Hash import SHA256
 
 TRIALS = 100
 STRLEN = 5
@@ -44,7 +49,7 @@ class WeakCollision:
         data = self.get_random_byte_string()
         while data == init_data:
             data = self.get_random_byte_string()
-        hash_object = SHA256.new(data)
+        hash_object = hashlib.sha256(data)
         hex_digest = hash_object.hexdigest()
         return data, hex_digest[:6]
 
