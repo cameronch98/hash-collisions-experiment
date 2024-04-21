@@ -14,8 +14,8 @@ STRLEN = 5
 
 
 class WeakCollision:
+    """Run trials of breaking hash function weak collision resistance"""
     def __init__(self, trials=TRIALS, strlen=STRLEN):
-        # Experiment params
         self.trials: int = trials
         self.strlen: int = strlen
         self.results: list[int] = []

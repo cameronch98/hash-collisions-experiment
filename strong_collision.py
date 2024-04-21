@@ -14,13 +14,14 @@ STRLEN = 5
 
 
 class StrongCollision:
+    """Run trials of breaking hash function strong collision resistance"""
     def __init__(self, trials=TRIALS, strlen=STRLEN):
-        self.trials = trials
-        self.strlen = strlen
-        self.results = []
+        self.trials: int = trials
+        self.strlen: int = strlen
+        self.results: list[int] = []
 
     def start(self):
-        """Execute trials number of break_weak_collision tests and report average results."""
+        """Execute trials number of break_strong_collision tests and report average results."""
         # Start trials number of break_strong_collision test processes
         with concurrent.futures.ProcessPoolExecutor() as executor:
             outputs = [executor.submit(self.break_strong_collision) for _ in range(self.trials)]
